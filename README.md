@@ -70,7 +70,8 @@ importante citar que o banco de dados postgres:13 será usado dentro do ambiente
 ---
 
 ### Lucas Lira
-Estudante em Engenharia de Computação pela Universidade Federal de Uberlândia; 
-Técnico de Informática.
-Atualmente no meu tempo livre estudo e dedico para Vaga em Estágio Backend: Java, Python, RPA, SQL, FastAPI. 
+1. Estudante em Engenharia de Computação pela Universidade Federal de Uberlândia; 
+2. Técnico em Informática.
+   
+- *Atualmente no meu tempo livre estudo e dedico para Vaga em Estágio Backend: Java, Python, RPA, SQL, FastAPI.*
 
