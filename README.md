@@ -35,23 +35,28 @@ Conferir requirements.txt.
 4. Digitar o comando eval $(minikube docker-env) para alternar o local de construção das imagens;
 5. Construir a imagem da aplicação a partir do Dockerfile dentro do ambiente Minikube;
 6. Aplicar deployments e services .yaml:
-   sugiro seguir essa sequência
+
+   *sugiro seguir essa sequência*
 - kubectl apply -f postgres-pv.yaml
 - kubectl apply -f postgres-deployment.yaml
 - kubectl apply -f postgres-service.yaml
+  
 importante citar que o banco de dados postgres:13 será usado dentro do ambiente VM criado, assim, completamente isolado, apesar de não ser a forma mais indicada, para estudos acadêmicos
 é de importante experiência; lembre-se de verificar informações como: nome do banco de dados, usuário, senha e port a ser usada, para erros de conflitos.
+
 - kubectl apply -f deployment.yaml
 - kubectl apply -f service.yaml
-Verifique se está tudo bem, 
+  
+    *Verifique se está tudo bem,* 
 - kubectl get pods
-NAME                           READY   STATUS    RESTARTS   AGE
-projeto-asa-59d86846fb-js7gs   1/1     Running   0          5m9s
-projeto-asa-59d86846fb-zfqnv   1/1     Running   0          5m9s
 
 7. Expor a porta;
-kubectl port-forward deployment/projeto-asa 5000:5000
+- kubectl port-forward deployment/projeto-asa 5000:5000
+  
 8. Acesse com o seu navegador padrão.
+
+
+---
 
 
 
@@ -67,6 +72,5 @@ kubectl port-forward deployment/projeto-asa 5000:5000
 ### Lucas Lira
 Estudante em Engenharia de Computação pela Universidade Federal de Uberlândia; 
 Técnico de Informática.
-
 Atualmente no meu tempo livre estudo e dedico para Vaga em Estágio Backend: Java, Python, RPA, SQL, FastAPI. 
 
