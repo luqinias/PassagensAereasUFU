@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: projeto-asa-deployment
+  labels:
+    app: projeto-asa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: projeto-asa
+  template:
+    metadata:
+      labels:
+        app: projeto-asa
+    spec:
+      containers:
+      - name: projeto-asa-container
+        image: projetopassagens:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5000
+        env:
+        - name: DATABASE_URL
+          value: "postgresql://postgres:lucas@postgres:5432/companhia_aerea" 
