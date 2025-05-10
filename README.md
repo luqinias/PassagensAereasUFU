@@ -51,7 +51,7 @@ importante citar que o banco de dados postgres:13 será usado dentro do ambiente
 - kubectl get pods
 
 7. Expor a porta;
-- kubectl port-forward deployment/projeto-asa 5000:5000
+- kubectl port-forward deployment/projeto-asa-deployment 5000:5000
   
 8. Acesse com o seu navegador padrão.
 
