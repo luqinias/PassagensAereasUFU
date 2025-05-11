@@ -5,9 +5,42 @@ Essa API, com uso do framework FastAPI, foi desenvolvida para tratar o backend d
 CRUD em tabelas de Aeroportos, Passagens, Voos; Sessões de login com chave de sessão temporária (duração de 1h), permitindo validar, criar e encerrar. 
 Além de reservas de passagens, com geração de e-tickets e localizador de acordo com a quantidade de passagens compradas.
 
-Foram utilizados conceitos avançados de: Padrão APIs REST, Kubernetes(Minikube), Dockerfile, Containers, Rede, Deployments, Bancos de Dados(PostgreSQL), Linux.
+
+## Foram utilizados conceitos avançados de:
+- Python
+- FastAPI
+- PostgreSQL
+- Deployments
+- SQLAlchemy
+- Containers
+- Docker, Dockerfile
+- Kubernetes (Minikube)
+- Uvicorn
+- Pydantic
+
+## Estrutura dos Microserviços:
+
+PassagensAereasUFU/\
+|---- Dockerfile\
+|---- deployment.yaml\
+|---- postgres-deployment.yaml\
+|---- postgres-pv.yaml\
+|---- postgres-service.yaml\
+|---- service.yaml\
+|---- README.md\
+|---- requirements.txt\
+|---- app/\
+|&nbsp;&nbsp;&nbsp;&nbsp;|---- main.py\
+|&nbsp;&nbsp;&nbsp;&nbsp;|---- __init__.py\
+|&nbsp;&nbsp;&nbsp;&nbsp;|---- models/\
+|&nbsp;&nbsp;&nbsp;&nbsp;|---- routers/\
+|&nbsp;&nbsp;&nbsp;&nbsp;|---- schemas/\
+|&nbsp;&nbsp;&nbsp;&nbsp;|---- crud/\
+|&nbsp;&nbsp;&nbsp;&nbsp;|---- auth/
+
 
 # Requisitos
+
 É necessário ter um sistema Linux instalado na máquina, ou terminal WSL, Ambiente de desenvolvimento de sua preferência, foi utilizado Visual Studio Code, instalações de tecnologias: Kubernetes (Minikube), Docker.
 Conferir requirements.txt.
 
