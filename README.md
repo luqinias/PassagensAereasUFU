@@ -94,7 +94,7 @@ importante citar que o banco de dados postgres:13 será usado dentro do ambiente
 
 
 🔗 **Conecte-se comigo:**
-- [LinkedIn](https://www.linkedin.com/in/luc-aslira/)
+- [LinkedIn](https://www.linkedin.com/in/lucasliraoff/)
   
 🌐 **Contato:**
 - Email institucional: luc.aslira@ufu.br
